@@ -1,0 +1,58 @@
+{
+  "siteID": "moaejp",
+  "httpSettings": {
+    "maxCrawlTimes": 10,
+    "header": {
+      "userAgent": "azukiCrawler"
+    },
+    "timeoutInMs": 30000,
+    "intervalInMs": 1000
+  },
+  "init": {
+    "url": "http://www.moae.jp/comic/list/series?orderby=new&page=1",
+    "method": "GET",
+    "query": {}
+  },
+  "layers": [
+    {
+      "layer": 0,
+      "pattern": "http://www.moae.jp/comic/list/series\\?orderby=new&page=[0-9]+",
+      "block": ".box-set > li",
+      "width": {
+        "method": "GET",
+        "query": {},
+        "selector": ".next a",
+        "attr": "href",
+        "regex": "^(.*)$",
+        "replace": "http://www.moae.jp$1"
+      },
+      "depth": {
+        "method": "GET",
+        "query": {},
+        "selector": ".book-img a",
+        "attr": "href",
+        "regex": "^(.*)$",
+        "replace": "http://www.moae.jp$1"
+      }
+    },
+    {
+      "layer": 1,
+      "pattern": "http://www.moae.jp/comic/[^/]+$",
+      "block": "html",
+      "depth": {
+        "method": "GET",
+        "query": {},
+        "selector": ".mod-profile-block .mod-btn-nav a",
+        "attr": "href",
+        "regex": "^(.*)$",
+        "replace": "http:$1"
+      }
+    },
+    {
+      "layer": 2,
+      "pattern": "http://.*.moae.jp/lineup/[0-9]+",
+      "block": "html",
+      "exit": true
+    }
+  ]
+}

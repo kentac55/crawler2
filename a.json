@@ -1,0 +1,60 @@
+{
+  "siteName": {
+    "layer": "1",
+    "selector": "",
+    "args": "text",
+  },
+  "tag": {
+    "layer": "1",
+    "selector": "",
+    "args": "text"
+  },
+  "backNum_text": {
+    "layer": "1",
+    "selector": ".fake",
+    "args": "text",
+    "script": []
+  },
+  "backNum_url": {
+    "layer": "1",
+    "selector": ".fake",
+    "args": "href",
+    "script": []
+  },
+  "title": {
+    "layer": "0",
+    "selector": ".book-title",
+    "args": "text",
+    "script": false
+  },
+  "author": {
+    "layer": "0",
+    "selector": ".book-author",
+    "args": "text",
+    "script": false
+  },
+  "magazine": {
+    "layer": "0",
+    "selector": ".book-magazine",
+    "args": "text",
+    "script": false
+  },
+  "new": {
+    "layer": "0",
+    "selector": ".book-date",
+    "args": "text",
+    "script": false
+  },
+  "next": {
+    "layer": "1",
+    "selector": ".fake",
+    "args": "text",
+    "script": false
+  },
+  "imageUrl": {
+    "layer": "1",
+    "selector": ".profile-photo > img",
+    "args": "src",
+    "script": false
+  }
+}

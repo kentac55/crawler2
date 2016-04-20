@@ -1,0 +1,77 @@
+{
+  "siteID": "moae.jp",
+  "props": [
+    {
+      "propName": "siteName",
+      "layer": 0,
+      "selector": "",
+      "args": "text",
+      "scripts": [
+        "\"モアイ\""
+      ]
+    },
+    {
+      "propName": "tag",
+      "layer": 1,
+      "selector": "",
+      "args": "text",
+      "scripts": []
+    },
+    {
+      "propName": "backNum_text",
+      "layer": 1,
+      "selector": ".fake",
+      "args": "text",
+      "scripts": []
+    },
+    {
+      "propName": "backNum_url",
+      "layer": 1,
+      "selector": ".fake",
+      "args": "href",
+      "scripts": []
+    },
+    {
+      "propName": "title",
+      "layer": 0,
+      "selector": ".book-title",
+      "args": "text",
+      "scripts": []
+    },
+    {
+      "propName": "author",
+      "layer": 0,
+      "selector": ".book-auther",
+      "args": "text",
+      "scripts": []
+    },
+    {
+      "propName": "magazine",
+      "layer": 0,
+      "selector": ".book-magazine",
+      "args": "text",
+      "scripts": []
+    },
+    {
+      "propName": "next",
+      "layer": 1,
+      "selector": ".fake",
+      "args": "text",
+      "scripts": []
+    },
+    {
+      "propName": "imageUrl",
+      "layer": 1,
+      "selector": ".profile-photo",
+      "args": "src",
+      "scripts": []
+    },
+    {
+      "propName": "update",
+      "layer": 0,
+      "selector": ".book-date",
+      "args": "text",
+      "scripts": []
+    }
+  ]
+}
